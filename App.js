@@ -4,8 +4,8 @@ import { StatusBar } from "expo-status-bar";
 import { Text, SafeAreaView } from "react-native";
 import { TailwindProvider } from "tailwindcss-react-native";
 import HomeScreen from "./screens/HomeScreen";
-import Discover from "./screens/Discover";
-import ItemScreen from "./screens/ItemScreen";
+// import Discover from "./screens/Discover";
+// import ItemScreen from "./screens/ItemScreen";
 
 export default function App() {
   return (
@@ -13,8 +13,8 @@ export default function App() {
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Home" component={HomeScreen} />
-          <Stack.Screen name="Discover" component={Discover} />
-          <Stack.Screen name="ItemScreen" component={ItemScreen} />
+          {/* <Stack.Screen name="Discover" component={Discover} />
+          <Stack.Screen name="ItemScreen" component={ItemScreen} /> */}
         </Stack.Navigator>
       </NavigationContainer>
     </TailwindProvider>
